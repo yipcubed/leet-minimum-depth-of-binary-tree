@@ -48,10 +48,10 @@ void test1() {
     vector<int> v1{3, 9, 20};
 
     TreeNode *t1 = new TreeNode(v1);
-    TreeNode *t20 = findItem(t1, 20);
+    TreeNode *t20 = t1->findItem(20);
     t20->left = new TreeNode(15);
     t20->right = new TreeNode(7);
-
+    cout << t1 << endl;
     cout << "2 ? " << Solution().minDepth(t1) << endl;
 //    cout << " ? " << Solution().func() << endl;
 //    cout << " ? " << Solution().func() << endl;
